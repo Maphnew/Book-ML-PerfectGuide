@@ -24,13 +24,39 @@ Study : Book-ML-PerfectGuide
 #### DataFrame 데이터 삭제
 #### Index 객체
 #### 데이터 셀렉션 및 필터링
+1. [] : 컬럼 기반 필터링 또는 불린 인덱싱 필터링 제공
+2. ix[], loc[], iloc[]: 명칭/위치 기반 인덱싱을 제공
+3. Boolean Indexing: 조건식에 따른 필터링을 제공
 #### 정렬, Aggregation 함수, GroupBy 적용
+1. Aggregation
+- sum(), max(), min(), count()
+- axis 0 and axis 1
+2. groupby()
+- DataFramGroupBy 객체
+- df.groupby('Pclass')['Age'].agg([max, min])
+- df.groupby('Pclass').agg({'Age':'max', 'Fare':'mean'})
+
 #### 결손 데이터 처리하기
+1. isna()
+- df.isna().sum()
+2. fillna()
+- df['Cabin'].fillna('A')
+- df['Embarked'].fillna(df['Embarked'].mean())
 #### Apply lambda 식으로 데이터 가공
+1. python lambda 
+- lambda_squre = lambda x:x**2
+- lambda_squre(3) -> 9
+2. pandas apply lambda
+- df['Name_len'] = df['Name'].apply(lambda x : len(x))
+
 ### 5. 정리
+
 ## 02 사이킷런으로 시작하는 머신러닝
+
 ### 1. 사이킷런 소개와 특징
-### 2. 첫 번째 머신러닝 만들어 보기 - 붓꽃 품종 예측학시
+1. numpy, scipy, ...
+### 2. 첫 번째 머신러닝 만들어 보기 - 붓꽃 품종 예측하기
+1. train test target prediction accuracy
 ### 3. 사이킷런의 기반 프레임워크 익히기
 #### Estimator 이해 및 fit(), predict() 메서드
 #### 사이킷런의 주요 모듈
