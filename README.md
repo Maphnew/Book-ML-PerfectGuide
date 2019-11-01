@@ -94,13 +94,20 @@ Study : Book-ML-PerfectGuide
 ## 03 평가
 ### 1. 정확도(Accuracy)
 ### 2. 오차 행렬
+- Confusion Matrix
+- 예측 Negative/Positive 와 실제 Negative/Positive 구분
+- TN(TrueNegative), TP(TruePositive), FN(FalseNegative), FP(FalsePositive)
+
 ### 3. 정밀도와 재현율
+- Precision, Recall
+- TP/FP+TP, TP/FN+TP
 #### 정밀도/재현율 트레이드오프
 #### 정밀도와 재현율의 맹점
 ### 4. F1 스코어
 ### 5. ROC 곡선과 AUC
 ### 6. 피마 인디언 당뇨병 예측
 ### 7. 정리
+
 ## 04 분류
 ### 1. 분류(Classification)의 개요
 ### 2. 결정 트리
