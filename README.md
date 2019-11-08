@@ -107,7 +107,7 @@ Study : Book-ML-PerfectGuide
 ### 5. ROC 곡선과 AUC
 ### 6. 피마 인디언 당뇨병 예측
 ### 7. 정리
-
+<테스트>
 ## 04 분류
 ### 1. 분류(Classification)의 개요
 ### 2. 결정 트리
