@@ -129,7 +129,16 @@ Study : Book-ML-PerfectGuide
 
 
 #### 결정 트리 파라미터
+- max-depth: 트리의 깊이를 규정, default: None
+- max_features: 고려할 최대 피처 수
+- min_samples_split: node를 분할하기 위한 최소한의 샘플데이터 수
+- min_samples_leaf: 말단 노드(leaf)가 되기 위한 최소한의 샘플 데이터 수
+- max_leaf_nodes: 말단 노드(leaf)의 최대 개수
+
 #### 결정 트리 모델의 시각화
+- Graphviz 실행파일 설치, 파이썬 래퍼 모듈 설치, OS환경변수 구성
+- Feature Importances
+
 #### 결정 트리 과적합(Overfitting)
 #### 결정 트리 실습 - 사용자 행동 인식 데이터 세트
 ### 3. 앙상블 학습
